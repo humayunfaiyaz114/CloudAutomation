@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Cloudgen4">
+	<!-- <listeners> -->
+	<!-- <listener class-name="com.MSA.uti lities.ReportFile"></listener> -->
+	<!-- </listeners> -->
+	 
+	 <test name="CloudObject">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.CloudRunnerPackage.CloudObjectRunner"></class>
+		</classes>
+ </test>
+  <test name="Services">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.CloudRunnerPackage.ServicesTestCases"></class>
+		</classes>
+ </test>
+  <test name="projects">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.CloudRunnerPackage.ProjectsTestCases"></class>
+		</classes>
+ </test>
+   <test name="NewBatches">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.CloudRunnerPackage.NewBatchesTestCases"></class>
+		</classes>
+	</test>	
+  <test name="Training">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.CloudRunnerPackage.TrainingTestCases"></class>
+		</classes>
+ </test>
+    
+  <test name="Insights">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.CloudRunnerPackage.InSightsTestCases"></class>
+		</classes>
+ </test>
+   <test name="News">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.CloudRunnerPackage.NewsTestCases"></class>
+		</classes>
+ </test>
+
+</suite>
